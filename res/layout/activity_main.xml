@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <EditText
+        android:id="@+id/speak_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入合成的文字"
+        android:lines="6" />
+    
+    <Button 
+        android:onClick="listen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始听写"/>
+    
+    <Button 
+        android:onClick="speak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始合成"/>
+
+</LinearLayout>
